@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+.header {
+  color: white;
+  background-color: #1A2336;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  min-height: 4rem;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+}
+.header h1 {
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.header-content {
+  max-width: 100%;
+  display: flex;
+}
+
+.header-title {
+  font-size: 1.5em;
+  font-weight: normal;
+}/*# sourceMappingURL=style.css.map */
