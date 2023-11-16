@@ -1,4 +1,4 @@
-/* Reset básico para remover as margens e paddings padrão */
+
         @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
 * {
         margin: 0;
@@ -14,7 +14,10 @@
         align-items: center;
         height: 100vh;
         width: 100%;
-        background-color: #1a2b35;
+        background-image: url(../../assets/images/2bb9062555f5b2bf7e5a5f8d92dfb841ec6919e8.jpg);
+        background-clip: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         label{
                 font-size: 1.3rem;
@@ -44,6 +47,7 @@
         border-radius: .5rem; 
         width: 50rem; 
         border: 1px solid #ccc; 
+        color: black;
       }
       
       .login-button {
@@ -70,10 +74,11 @@
 
 .login-card {
         background-color: #576a752c;
+        backdrop-filter: blur(1rem);
         border-radius: 1rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         max-width: 60%;
-        max-height: 55%;
+        max-height: 60%;
         height: 100%;
         width: 100%;
         box-sizing: border-box;
@@ -87,7 +92,7 @@
                 content: "";
                 position: absolute;
                 width: 1px;
-                height: 196px;
+                height: 296px;
                 left: 0;
                 top: 80%;
                 opacity: 0;

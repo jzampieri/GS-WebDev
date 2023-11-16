@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 .header {
         color: white;
-        background-color: #1A2336;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
         width: 100%;
         min-height: 4rem;
         top: 0;
         left: 0;
-        position: fixed;        
+        position: absolute;
         display: flex;
         justify-content: space-around;
 
