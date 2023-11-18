@@ -1,1 +1,32 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+* {
+  font-family: "Exo", sans-serif;
+}
+
+.home {
+  background-image: url(../../assets/images/393896-windows-11-microsoft-background-abstract-4k-pc.jpg);
+  height: 120vh;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 5rem 1fr 1fr 1fr;
+  grid-template-areas: "header header header header header header header header header header header header" "img-main img-main img-main img-main img-main img-main img-main box-aside box-aside box-aside box-aside box-aside" "box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-aside box-aside box-aside box-aside box-aside" "box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-aside box-aside box-aside box-aside box-aside" "box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens";
+}
+
+.box-header {
+  grid-area: header;
+}
+
+.box-main {
+  grid-area: img-main;
+}
+
+.box-aside {
+  grid-area: box-aside;
+}
+
+.box-sobre {
+  grid-area: box-sobre;
+}/*# sourceMappingURL=style.css.map */

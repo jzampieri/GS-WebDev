@@ -1,0 +1,41 @@
+.container-sobre {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.container-sobre .header-and-card {
+  display: flex;
+  height: 80%;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.container-sobre .header-and-card h1 {
+  align-self: center;
+}
+.container-sobre .header-and-card .card-sobre {
+  width: 82%;
+  height: 100%;
+  border: 1px solid;
+  backdrop-filter: blur(0.6rem);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-sobre .header-and-card .card-sobre p {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.container-sobre .button-sobre {
+  align-self: flex-end;
+  margin-right: 2rem;
+  color: black;
+  background-color: white;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
