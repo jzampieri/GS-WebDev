@@ -5,6 +5,12 @@
   width: 100%;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .container-main {
+    width: 100%;
+    height: 100%;
+  }
+}
 .container-main .card {
   align-items: center;
   justify-content: center;
@@ -14,6 +20,16 @@
   border: 1px solid;
   backdrop-filter: blur(0.6rem);
 }
+@media (max-width: 500px) {
+  .container-main .card {
+    border-radius: 1rem;
+  }
+}
 .container-main .card img {
   max-height: 80%;
+}
+@media (max-width: 800px) {
+  .container-main .card img {
+    max-height: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

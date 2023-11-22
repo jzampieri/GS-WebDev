@@ -6,7 +6,7 @@
 
 .home{
         background-image: url(../../assets/images/393896-windows-11-microsoft-background-abstract-4k-pc.jpg);
-        height: 120vh;
+        height: 160vh;
         background-clip: border-box;
         background-repeat: no-repeat;
         background-size: cover;
@@ -19,6 +19,27 @@
         "box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-aside box-aside box-aside box-aside box-aside"
         "box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-aside box-aside box-aside box-aside box-aside"
         "box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens";
+        @media (max-width: 800px){
+                height: 200vh;
+                grid-template-areas:
+                "header header header header header header header header header header header header"
+                "img-main img-main img-main img-main img-main img-main img-main box-aside box-aside box-aside box-aside box-aside"
+                "box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-aside box-aside box-aside box-aside box-aside"
+                "box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-aside box-aside box-aside box-aside box-aside"
+                "box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-sobre box-aside box-aside box-aside box-aside box-aside"
+                "box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens box-vantagens" ;
+        }
+        @media(max-width: 500px){
+                height: 220vh;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-areas: 
+                "header"
+                "img-main"
+                "box-aside"
+                "box-aside"
+                "box-sobre"
+                "box-vantagens";
+        }
 }
 
 .box-header{
@@ -35,4 +56,8 @@
 
 .box-sobre{
         grid-area: box-sobre;
+}
+
+.box-vantagens{
+        grid-area: box-vantagens;
 }

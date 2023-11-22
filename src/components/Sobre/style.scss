@@ -6,6 +6,11 @@
         align-items: center;
         margin-top: 1rem;
         gap: 1rem;
+        justify-content: space-around;
+        @media (max-width: 800px){
+            height: 100%;
+            margin-top: 0;
+     }
         
         .header-and-card {
             display: flex; 
@@ -13,9 +18,17 @@
             align-items: flex-start;
             gap: 1rem; 
             margin-left: 2rem;
+            @media (max-width: 800px){
+                display: inline;
+                justify-content: center;
+                align-items: center;
+         }
 
             h1{
                 align-self: center;
+                @media (max-width: 800px){
+                    text-align: center;
+             }
             }
 
             .card-sobre {
@@ -27,6 +40,20 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-right: 1rem;
+                @media (max-width: 800px){
+                    width: 95%;
+                    justify-content: center;
+                    align-items: center;
+                    align-self: center;
+                    display: flex;
+             }
+                @media (max-width: 500px){
+                    backdrop-filter: none;
+                    border: none;
+                    display: flex;
+             }
+             
     
                 p {
                     font-size: 1.2rem;
@@ -42,6 +69,11 @@
             background-color: white;
             padding: 1rem 1rem;
             cursor: pointer;
+            border: none;
+            transition: .5s;
+            &:hover{
+                background-color: antiquewhite;
+            }
         }
     }
     

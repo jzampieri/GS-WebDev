@@ -1,0 +1,38 @@
+.container-pai{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+                align-self: flex-start;
+                margin-left: 3rem;
+        }
+}
+
+.container-vantagens{
+        width: 95%;
+        height: 40vh;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .card-vantagens{
+                width: 35%;
+                height: 95%;
+                background-color: transparent;
+                border: 1px solid;
+                backdrop-filter: blur(1.5rem);
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
+                p{
+                        width: 80%;
+                        font-weight: 600;
+                        line-height: 2rem;
+                }
+
+        }
+}
