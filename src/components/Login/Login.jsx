@@ -9,14 +9,23 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
   
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     
-    if (email === 'admin@gmail.com' && password === '123456') {
-      sessionStorage.setItem('user', JSON.stringify({ email }));
-      navigate('/home');
-    } else {
-      setErrorMessage('Usuário ou senha inválidos');
+    try {
+      const response = await fetch(`http://localhost:3000/usuarios?email=${encodeURIComponent(email)}&senha=${encodeURIComponent(password)}`);
+      const data = await response.json();
+      
+      if (data.length > 0) {
+        const user = data[0];
+        sessionStorage.setItem('user', JSON.stringify({ email: user.email, nome: user.nome }));
+        navigate('/home');
+      } else {
+        setErrorMessage('Usuário ou senha inválidos');
+      }
+    } catch (error) {
+      console.error('Erro ao autenticar', error);
+      setErrorMessage('Erro ao conectar com o servidor');
     }
   };
   
